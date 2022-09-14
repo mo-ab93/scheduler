@@ -4,18 +4,15 @@ import DayList from "./DayList";
 import Appointment from "./Appointment/index";
 import useApplicationData from "../hooks/useApplicationData";
 
-
-import { getAppointmentsForDay, getInterview, getInterviewersForDay } from "helpers/selectors";
-
+import {
+  getAppointmentsForDay,
+  getInterview,
+  getInterviewersForDay,
+} from "helpers/selectors";
 
 export default function Application(props) {
-  const {
-    state,
-    setDay,
-    bookInterview,
-    cancelInterview
-  } = useApplicationData();
-
+  const { state, setDay, bookInterview, cancelInterview } =
+    useApplicationData();
 
   const appointments = getAppointmentsForDay(state, state.day);
   const interviewers = getInterviewersForDay(state, state.day);
@@ -23,7 +20,6 @@ export default function Application(props) {
   const schedule = appointments.map((appointment) => {
     const interview = getInterview(state, appointment.interview);
 
-   
     return (
       <Appointment
         key={appointment.id}
@@ -37,11 +33,9 @@ export default function Application(props) {
     );
   });
 
-
   return (
     <main className="layout">
       <section className="sidebar">
-        
         <img
           className="sidebar--centered"
           src="images/logo.png"

@@ -89,20 +89,13 @@ export default function Appointment(props) {
           name={props.interview.student}
           interviewer={props.interview.interviewer.id}
         />
-        
       )}
-       {mode === ERROR_SAVE && 
-        <Error 
-          message="Could not create appointment"
-          onClose={back}
-        />
-      }
-      {mode === ERROR_DELETE && 
-        <Error 
-          message="Could not cancel appointment"
-          onClose={back}
-        />
-      }
+      {mode === ERROR_SAVE && (
+        <Error message="Could not create appointment" onClose={back} />
+      )}
+      {mode === ERROR_DELETE && (
+        <Error message="Could not cancel appointment" onClose={back} />
+      )}
     </article>
   );
 }
