@@ -33,18 +33,18 @@ npm test
 ```
 
 ### Daily view
-!['booked-slots-available']()
+!['booked-slots-available'](https://github.com/mo-ab93/scheduler/blob/master/public/images/selectday.png)
 
 
 ### Book an Appointment
-!['book-an-appointment']()
+!['book-an-appointment'](https://github.com/mo-ab93/scheduler/blob/master/public/images/choose.png)
 
 
 ### No slot available for a specific day
-!['book-an-appointment']()
+!['book-an-appointment'](https://github.com/mo-ab93/scheduler/blob/master/public/images/noslot.png)
 
 ### Deleting an appointment
-!['book-an-appointment']()
+!['book-an-appointment'](https://github.com/mo-ab93/scheduler/blob/master/public/images/delete.png)
 
 
 
